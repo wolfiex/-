@@ -1,2 +1,355 @@
 <h1> Hi</h1>
 kldj
+
+
+<style>
+
+  .image {
+  width: 250px;
+  float: left;
+  margin: 20px;
+}
+body {
+  font-size: small;
+  line-height: 1.4;
+}
+p {
+  margin: 0;
+}
+
+.performance-facts {
+  border: 1px solid black;
+  margin: 20px;
+  float: left;
+  width: 280px;
+  padding: 0.5rem;
+  table {
+    border-collapse: collapse;
+  }
+}
+.performance-facts__title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 0 0.25rem 0;
+}
+.performance-facts__header {
+  border-bottom: 10px solid black;
+  padding: 0 0 0.25rem 0;
+  margin: 0 0 0.5rem 0;
+  p {
+    margin: 0;
+  }
+}
+.performance-facts__table {
+  width: 100%;
+  thead tr {
+    th,
+    td {
+      border: 0;
+    }
+  }
+  th,
+  td {
+    font-weight: normal;
+    text-align: left;
+    padding: 0.25rem 0;
+    border-top: 1px solid black;
+    white-space: nowrap;
+  }
+  td {
+    &:last-child {
+      text-align: right;
+    }
+  }
+  .blank-cell {
+    width: 1rem;
+    border-top: 0;
+  }
+  .thick-row {
+    th,
+    td {
+      border-top-width: 5px;
+    }
+  }
+}
+.small-info {
+  font-size: 0.7rem;
+}
+
+.performance-facts__table--small {
+  @extend .performance-facts__table;
+  border-bottom: 1px solid #999;
+  margin: 0 0 0.5rem 0;
+  thead {
+    tr {
+      border-bottom: 1px solid black;
+    }
+  }
+  td {
+    &:last-child {
+      text-align: left;
+    }
+  }
+  th,
+  td {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.performance-facts__table--grid {
+  @extend .performance-facts__table;
+  margin: 0 0 0.5rem 0;
+  td {
+    &:last-child {
+      text-align: left;
+      &::before {
+        content: "•";
+        font-weight: bold;
+        margin: 0 0.25rem 0 0;
+      }
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.thick-end {
+  border-bottom: 10px solid black;
+}
+.thin-end {
+  border-bottom: 1px solid black;
+}
+
+
+  
+</style>
+
+
+<section class="performance-facts">
+  <header class="performance-facts__header">
+    <h1 class="performance-facts__title">Contact Details</h1>
+    <p>Many thanks for finding my items! </p>
+  </header>
+  <table class="performance-facts__table">
+    <thead>
+      <tr>
+        <th colspan="3" class="small-info">
+          Amount Per Serving
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <b></b>
+          person
+        </th>
+        <td>
+          +1 beer
+        </td>
+      </tr>
+      <tr class="thick-row">
+        <td colspan="3" class="small-info">
+          <b>% Daily Location*</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Name</b>
+          
+        </th>
+        <td>
+          <b>75%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Daniel
+        </th>
+        <td>
+          50%
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Ellis
+          
+        </th>
+        <td>
+          50%
+        </td>
+      </tr>
+     
+        <tr>
+        <th colspan="2">
+          <b>Instagram</b>
+          
+        </th>
+        <td>
+          <b>10%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          @dan.ellis.adventure
+        </th>
+        <td>
+          100%
+        </td>
+      </tr>
+      
+      <tr>
+        <th colspan="2">
+          <b>Snail Mail - lightning</b>
+          
+        </th>
+        <td>
+          <b>10%</b>
+        </td>
+      </tr>
+            <tr>
+        <td class="blank-cell">
+        </td>
+        
+        <th>
+         daniel.ellis.research+tag
+        </th>
+        <td>
+          56%
+        </td>
+      </tr>
+            <tr>
+        <td class="blank-cell">
+        </td>
+        
+        <th>
+         @
+        </th>
+        <td>
+          4%
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        
+        <th>
+         gmail.com
+        </th>
+        <td>
+          40%
+        </td>
+      </tr>
+      <tr>
+
+      </tr>
+      <tr class="thick-end">
+        <th colspan="2">
+        </th>
+        <td>
+          
+        </td>
+      </tr>
+
+              <tr>
+        <th colspan="2">
+          <b>website</b>
+        </th>
+        <td>
+          <b>5%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          daniel.ellis.research.com
+        </th>
+        <td>
+          100%
+        </td>
+      </tr>
+
+
+      
+    </tbody>
+  </table>
+  
+  <table class="performance-facts__table--grid">
+  <tbody>
+    <tr>
+      <td colspan="2">
+        Carbohydrates
+        90g
+      </td>
+      <td>
+        Protein
+        37g
+      </td>
+    </tr>
+    <tr class="thin-end">
+      <td colspan="2">
+        Fats
+        22g
+      </td>
+      <td>
+        Fiber
+        1g
+      </td>
+    </tr>
+  </tbody>
+</table>
+ 
+  <p class="small-info">*   Mountaineering nutrition is crucial for maintaining energy levels and supporting physical performance. Values above are per 10km segment. </p>
+<br>
+  
+  <table class="performance-facts__table--small small-info">
+  <thead>
+    <tr>
+      <th>Mountaineering Metrics:</th>
+    </tr>
+
+  </thead>
+  <tbody>
+    <tr>
+
+    </tr>
+    <tr>
+      <th colspan='2'>UV</th>
+      <td>High UV</td>
+      <td>Mod UV </td>
+    </tr>
+    <tr>
+<tbody>
+    <tr>
+      <th colspan="2">Altitude</th>
+      <td> 2,500m </td>
+      <td> >3,000m </td>
+    </tr>
+    <tr>
+      <th colspan='2'>Oxygen Efficiency</th>
+      <td>-10%</td>
+      <td>-20%</td>
+    </tr>
+    <tr>
+      <th colspan="2">Pace</th>
+      <td>-15%</td>
+      <td>-30%</td>
+    </tr>
+    <tr>
+      <th colspan="2">Speed</th>
+      <td>-20%</td>
+      <td>-40%</td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
